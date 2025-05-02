@@ -1,0 +1,371 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: blue;
+}
+.row{
+    margin: 0;
+}
+.container{
+    padding: 70px 0;
+}
+p,li{
+    color: #444;
+    font-size: 14px;
+}
+
+header .navbar{
+    background-color: #353D41;
+}
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar-brand{
+    padding: 0;
+}
+/*Area do SLide */
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: 90vh;
+}
+.carousel-item img{
+    height: 100vh;
+}
+
+ #legenda{
+    top: 30%;
+}
+#legenda h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+#legenda p{
+    font-size: 22px;
+    font-weight: 300;
+    margin: 70px;
+    color: #FFF;
+}
+#main-btn{
+   color: #FFF;
+    width: 200px;
+    height: 60px;
+    padding: 0px 20px;
+    margin: 5px;
+}
+.carousel-indicators .active{
+    background-color: #65DAF9; 
+}
+/*Sobre a empresa*/
+#about-area{
+    background-color: #F9F9F9;
+}
+.main-title{
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 45px;
+    text-align: center;
+    height: 60px;
+}
+.main-title::after {
+    content: "";
+    border-top: 3px solid #333;
+    width: 15%;
+    position: absolute;
+    left: 42.5%;
+   
+}
+
+.about-title{
+    font-size: 20px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.about-list{
+    list-style: none;
+    padding: 0;
+}
+.about-list li{
+    line-height: 40px;
+}
+.about-list i{
+    color: #65DAF9;
+    margin-right: 15px;
+}
+.service-box{
+    text-align: center;
+    margin-bottom: 4px;
+}
+.servicebox i, .service-box h4{
+    transition: .5s;
+}
+.service-box i{
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #444;
+}
+.service-box h4{
+    font-size: 24;
+    margin-bottom: 20px;
+}
+.service-box:hover > i, .service-box:hover > h4{
+    color: #65DAF9;
+
+}
+/*Dados*/
+.circle-box div{
+    padding: 0 40px;
+}
+.progressbar text{
+    font-weight: bold;
+    font-size: 32px;
+}
+#data-area{
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 1;
+    background-image: url(../img/Coruja.png);
+
+}
+#data-area p{
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+    
+}
+
+/*Nossa Team */
+.card-body{
+    text-align: center;
+}
+
+.esquerdo{
+    background: black;
+  
+}
+.centralizar{
+    text-align: center;
+}
+
+/*Area Portfólio*/
+
+.project-box{
+    margin-bottom: 30px;
+}
+#filter-btn-box{
+    margin-bottom: 50px;
+    text-align: center;
+}
+#portfolio-area .filter-btn{
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    padding:0 20px;
+}
+.img-fluid{
+    text-align: center;
+
+}
+/* New letter*/
+#news-area{
+    text-align: center;
+    background-color: #F9F9F9;
+}
+#news-area p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+#email-input{
+    border-radius: 0;
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #65DAF9;
+    display: inline;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+}
+#news-btn{
+    border: 1px solid #65DAF9;
+    border-radius: 0;
+    border-top-right-radius:20px;
+    border-bottom-right-radius: 20px;
+    background-color: #65DAF9;
+    color: #FFF;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: -130px;
+    position: absolute;
+    transition: 0.5;
+}
+#news-btn:hover{
+    background-color: #FFF;
+    color: #65DAF9;
+}
+/*Call Area*/
+#call-area{
+    background-color: #65DAF9;
+    text-transform: uppercase;
+}
+#call-area .row{
+    display: block;
+    text-align: center;
+}
+#call-area .container{
+    padding: 30px 100px;
+}
+#call-area p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    display: inline;
+    height: 60px;
+    line-height: 60px;
+}
+#call-area #call-btn{
+    background-color: #fff;
+    color: #65DAF9;
+    font-size: 20px;
+    width: auto;
+    font-weight: bold;
+    border: none;
+    letter-spacing: 2;
+}
+#contact-area{
+    text-align: center;
+}
+.contact-box{
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #65DAF9;
+}
+.contact-box i{
+    color: #444;
+    border: 1px solid #65DAF9;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-box p{
+    font-size: 16px;
+}
+.contact-title{
+   font-weight: bold; 
+   color: #65DAF9;
+}
+
+#msg-box p{
+    font-size: 22px;   
+}
+#contact-form input[type="text"], #contact-form input[type="email"],#contact-form textarea{
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+#contact-form input[type="submit"]{
+    width: 120px;
+    height: 50px;
+}
+
+/*Rodpé*/
+#copy-area{
+    background-color: #F1F1F1;
+}
+#copy-area .container{
+    padding: 10px 0;
+    text-align: center;
+}
+#copy-area .container p{
+    margin-bottom: 0;
+}
+#copy-area .container a{
+    font-weight: bold;
+    color: #444;
+}
+#copy-area .container a:hover{
+    text-decoration: none;
+    color: #65DAF9;
+}
+#apply-btn {
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #FFF;
+  }
+  
+  #apply-btn:hover {
+    border-color: #65DAF9;
+    background-color: #65DAF9;
+  }
+  #apply-area {
+    height: 500px;
+  }
+  
+  #apply-area .container-fluid, #apply-area .row {
+    height: 100%;
+  }
+  
+  #apply-area .apply-box {
+    padding: 70px 50px;
+    text-align: center;
+  }
+  
+  #company-img {
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+    height: 100%;
+
+  }
+   #pattern-img {
+    background-image: url('../img/pattern.png');
+    background-size: cover;
+    height: 100%;
+   }
+  #pattern-img h4, #pattern-img p {
+    color: #FFF;
+  }
+  
+  #pattern-img h4 {
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  #pattern-img p {
+    margin-bottom: 20px;
+  }
+  
+
+/*Area Votar*/
+#area-votar{
+    background-color: #F1F1F1;
+}
+#area-votar .container-fluid, #area-votar .row {
+    height: 100%;
+  }
+
+
+  /*Area da Administração*/
+#area-gerirCandidato{
+    width: 100%;
+    background-color: #F1F1F1;
+    
+  }

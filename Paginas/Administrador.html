@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../Css/Style.css">
+    <link rel="stylesheet" href="../Css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MENU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" tabindex="1" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-outline" href="../Index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-outline" href="#">GERIR CANDIDATOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-outline" href="#">CONFIGURAR ELEIÇÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-outline" href="#">COMUNICAÇÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-outline" href="#">ENCERRAR ELEIÇÃO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!--Slide show-->
+    <main>
+        <div class="container-fluid">         
+            <!--Area Votar -->
+            <div id="area-gerirCandidato">
+                <h1>Painel de Controlo</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Gerir Candidatos </h3>
+                        </div>
+                        <div class="col-12">
+                            <!--Nao esquecer de adicionar os name em cada inputo, determinar o metdos post e e oaction-->
+                            <form action="" id="formAdicionarCandidato" class="row g-3 needs-validation novalidate">
+                                <div class="col-md-3 position-relative">
+                                    <label for="validationTooltip01" class="form-label">Nome Completo do Candiadto</label>
+                                    <input type="text" class="form-control" id="nome" placeholder="Primeiro Nome" required>
+                                    <div class="valid-tooltip">
+                                        Óptimo
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="validationTooltip01" class="form-label">Data Nascimento</label>
+                                    <input type="date" class="form-control" id="dataNas" placeholder="Numero do Candidato" required>   
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="validationTooltip01" class="form-label">Provincia</label>
+                                    <input class="form-control" list="datalistOptions" id="provincia" placeholder="Seleciona a Provincia" required>
+                                    <datalist id="datalistOptions">
+                                        <option value="Maputo">
+                                        <option value="Gaza">
+                                        <option value="Inhambane">
+                                        <option value="Sofala">
+                                        <option value="Manica">
+                                        <option value="Quelimane">
+                                        <option value="Tete">
+                                        <option value="Zambeze">
+                                        <option value="Nampula">
+                                        <option value="Niassa">
+                                        <option value="Pemba">
+                                        <option value=""></option>
+                                    </datalist>   
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="validationTooltip01" class="form-label">E-mail</label>
+                                    <input type="email" autocomplete="on" class="form-control" id="email" placeholder="nome@gmail.com" required>   
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="validationTooltip02" class="form-label">Nome do Partido</label>
+                                    <input class="form-control" list="partido" id="partido" placeholder="Seleciona o Partido" required>
+                                    <datalist id="partido">
+                                        <option value="RENAMO">
+                                        <option value="MDM">
+                                        <option value="FRELIMO">
+                                    </datalist>   
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="validationTooltip01" class="form-label">Numero do Candiadto</label>
+                                    <input type="number" class="form-control" id="numeroCand" placeholder="Numero do Candidato" required>   
+                                </div>
+                                
+                                <div class="col-md-6 position-relative">
+                                    <label for="" class="form-label">Mais Informações do Candidato</label>
+                                    <textarea name="mensagem" cols="1" rows="2" class="form-control" name="informaCandidato" id="informacoes" placeholder="Sua Mensagem" required></textarea>
+                                </div
+                                
+                                <div class="row justify-content-center">
+                                    <button type="submit" class="col-4 btn btn-outline-primary rounded-pill">Adicionar e Listar Candidatos</button>
+                                    <button class="col-4 btn btn-outline-primary rounded-pill" id="btnMostrarTodosDados">Listar</button>                        
+                                    <button class="col-4 btn btn-outline-primary rounded-pill" id="btnLimparCandidatos">Limpar Lista</button>
+                                </div>
+
+                            </form>
+
+                            <table class="table table-striped" id="tabelaCandidatos">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">NOME</th>
+                                        <th scope="col">NASCIMENTO</th>
+                                        <th scope="col">PROVINCIA</th>
+                                        <th scope="col">E-MAIL</th>
+                                        <th scope="col">PARTIDO</th>
+                                        <th scope="col">Nº CANDIDATO</th>
+                                        <th scope="col">ACÇÕES</th>
+
+                                
+                                    </tr>
+                                </thead>
+                                <tbody id="corpoTabelaCandidatos">
+                                    <tr>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                       
+                        </div>
+                        <div class="col-6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Area de Configuração da Eleição:**-->
+            <div id="area-configuracao">
+                <div class="container">   
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="main-title">Configuração da Eleição</h3>
+                        </div>
+
+                        <form action="" class="row g-3 needs-validation novalidate" id="formConfiguracaoEleicao">
+                            <div class="col-md-3">
+                                <label for="dataEleicao" class="form-label">Data da Eleição</label>
+                                <input type="date" class="form-control" id="dataEleicao" required>   
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationTooltip01" class="form-label">Hora da Eleição</label>
+                                <input type="time" class="form-control" id="horarioEleicao" required>   
+                            </div>
+                            <div class="col-md-6 position-relative">
+                                <label for="" class="form-label">Regras da Eleição</label>
+                                <textarea name="mensagem" cols="1" rows="2" class="form-control" name="informaCandidato" id="regrasEleicao" placeholder="Insira as regras" required></textarea>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-outline-primary" onclick="configurarEleicao()">Configurar Eleição</button>
+                                <!--<button class="btn btn-outline-primary" onclick="editarConfiguracao()">Editar Configuração</button></button>-->
+                                <!--<button class="btn btn-outline-primary" onclick="excluirConfiguracao()">Excluir Configuração</button>-->
+
+                            </div>
+                        </form>
+
+                        <table class="table table-striped" id="">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Data da Eleição</th>
+                                    <th scope="col">Horas</th>
+                                    <th scope="col">Regras</th>
+                                    <th scope="col">Acção</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="corpoTabelaConfigracao">
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>           
+            </div>
+        </div>
+
+            </div>
+        </main>
+    <!--Footer-->
+    <footer>
+        <div id="contact-area">
+            <div class="container p-0 ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Teve algum Problema, Entre em Contacto connosco</h3>
+                    </div>
+                    <form action="" class="class"></form>
+                    <div class="col-md-4 contact-box">
+                        <i class="fa fa-phone"></i>
+                        <p><span class="contact-title">Ligue para:</span>(+258) 844847046</p>
+                        <p><span class="contact-title">Horário:</span>8:00 - 19:00</p>
+
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fa fa-envelope"></i>
+                        <p><span class="contact-title">Envie um E-mail:</span>email@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <p><span class="contact-title">Venha Trabalhar connosco:</span> Lorem Ipsium</p>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="#" target="_blanck">Grupo1@2L4LDS1:USTM</a>&copy; 2023</p>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </footer>
+    <!--JavaScripts-->
+     
+<script src="../JS/bootstrap.js"></script>
+<script src="../Js/popper.min.js"></script>
+<script src="../Js/jquery-3-3-1.js"></script>
+<script src="../JS/scripts.js"></script>
+    
+</script>
+</body>
+</html>

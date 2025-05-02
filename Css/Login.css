@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body, html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-image: url(../img/bg-log.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+.login{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+#title h1{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;text-transform: uppercase;
+}
+
+.login .input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 60px
+}
+.input-email{
+    font-size: 20px;
+    width: 70%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    transition: .3s;
+    color: #fff;
+}
+.input-email:focus ~ label, 
+.input-email:valid ~ label{
+    top: -20px;
+    font-size: 15px;
+    color: #e47922;
+    border: none;
+} 
+.input label{
+    position: relative;
+    left: -335px;
+    color: #fff;
+}
+
+.login .checkbox{
+    padding-left: 60px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+button{
+    font-size: 25px;
+    width: 70%;
+    margin-left: 60px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+button:hover{
+background-color: #e47922;
+border-radius: 10px;
+
+}
+button active{
+    font-size: 27px;
+}
+
+.box p{
+    text-align: center;
+    margin: 20px 30px 0 0;
+    font-size: 20px;
+    font-family: 600;
+    color: #fff;
+}
+
+
+p{
+    color: #fff;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 300px){
+    body, html{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-image: url(1692011693939.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100%;
+        width: 100%;
+    }
+
+    .login{
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;   
+    }
+
+    .input label{
+        position: relative;
+        left: -30px;
+        color: #fff;
+    }
+  
+    
+}

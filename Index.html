@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">MENU</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" tabindex="1" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Paginas/Administrador.html">ADMINISTRADOR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="LoginTela.php">INICIAR SECÇÃO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Quarta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Quinta</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!--Slide show-->
+    <main>
+        <div class="container-fluid p-0 m-0">
+            <div id="carouselExampleCaptions" id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide 1"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-current="true" aria-label="slide 2"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"  aria-current="true" aria-label="slide 3"></button>
+                </div>
+                <!--Até aqui está tudo bem meu chefe-->
+                <div  class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="img/Captura de Ecrã 4.png" class="d-block w-100"alt="" />
+                        <div id="legenda" class="carousel-caption d-show d-md-block">
+                            <h2>Sistema De Votação</h2>
+                            <button id="main-btn" class="btn btn-outline-primary rounded-pill border-2">Se Inscreva</button>
+                            <p>é o meio de escolha entre um certo número de opções, baseado na entrada de um certo número de votos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/Captura de Ecrã 2.png" class="d-block w-100"alt="" />
+                        <div  id="legenda" class="carousel-caption d-show d-md-block" >
+                            <h2>Quer Votar?</h2>
+                            <button id="main-btn" class="btn btn-outline-primary rounded-pill border-2">Se Inscreva</button>
+                            <p>Acesse a Platafoma, e faça a sua Melhor Escolha.  Entenda como funciona o sistema de votação eletrônica nem Moçambique.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/Captura de Ecrã 3.png" class="d-block w-100"alt="" />
+                        <div id="legenda" class="carousel-caption d-show d-md-block" >
+                            <h2>Vote Com Estilo</h2>
+                            <button id="main-btn" class="btn btn-outline-primary rounded-pill border-2">Se Inscreva</button>
+                            <p>Um voto Livre, juste e Transparente</p>
+                        </div>
+                    </div>
+            
+                    
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">next</span>
+                    </button>
+                </div>
+            </div>
+            <!--Content-rea-->
+            <div id="about-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nosso Lema</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/Cidade.jpg" class="img-fluid h-100 w-100" alt="Games">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title">
+                                Uma Agência prepara PAra o Futuro
+                            </h3>
+                            <p class="justify-content-center">
+                                Esta página dá informações sobre eleições em Moçambique.
+                            Moçambique elege os seus representantes políticos a três níveis:</p>
+                            <ul class="about-list">
+                                <li><i class="fas fa-check"></i>a nível nacional elege o chefe de estado, o Presidente da República, e o parlamento, a Assembleia da República. O presidente é eleito para um mandato de cinco anos por sufrágio direto, desde 1994. O parlamento tem 250 membros, eleitos para um período de cinco anos por representação proporcional.</li>
+                                <li><i class="fas fa-check"></i>a nível provincial são eleitas Assembleias Provinciais, por um período de cinco ano e cuja função é monitorizar o governo provincial.</li>
+                                <li><i class="fas fa-check"></i>a nível local, são eleitos o Presidente do Conselho Municipal e os partidos que integram as Assembleias Municipais, em cidades e vilas consideradas municípios pela Assembleia da República.</li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sobre os erviçco da Empresa-->
+            <div class="area-servico">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="main-title">Acesso e Manuseamento</h1>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Acesse no Aplicativos</h4>
+                            <p>Lorem ipsun é simplesmente um testo que não faz sentido sentido quando tu lês como pessoa</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-tablet-android"></i>
+                            <h4>Acesse nos Tablets</h4>
+                            <p>Lorem ipsun é simplesmente um testo que não faz sentido sentido quando tu lês como pessoa</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-computer"></i>
+                            <h4>Acesse no seu Computador</h4>
+                            <p>Lorem ipsun é simplesmente um testo que não faz sentido sentido quando tu lês como pessoa</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fab fa-google"></i>
+                            <h4>Sistema Web</h4>
+                            <p>Lorem ipsun é simplesmente um testo que não faz sentido sentido quando tu lês como pessoa</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-hands-helping"></i>
+                            <h4>Suporte 24/7</h4>
+                            <p>Lorem ipsun é simplesmente um testo que não faz sentido sentido quando tu lês como pessoa</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-home"></i>
+                            <h4>A Qualquer, A qualquer Momento</h4>
+                            <p>Lorem ipsun é simplesmente um testo que não faz sentido sentido quando tu lês como pessoa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Dados da Empresa-->
+            <div id="data-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 circle-box">
+                            <div id="circuloA"></div>
+                            <p>Votos de 2013</p>
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circuloB"></div>
+                            <p>Votos de 2018</p>
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circuloC"></div>
+                            <p>Votos de 2019</p>
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circuloD"></div>
+                            <p>Votos de 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Team do Grupo-->
+            <div id="team-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossa Team</h3>
+                        </div>
+      
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/profile2.jpg" class="card-img-top" alt="Imagem de Perfil">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carmen Tovela</h5>
+                                    <p class="card-text">Analista do Sistema</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/profile4.jpg" class="card-img-top" alt="Imagem de Perfil">
+                                <div class="card-body">
+                                    <h5 class="card-title">Leticia Fondo</h5>
+                                    <p class="card-text">Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/profile3.jpg" class="card-img-top" alt="Imagem de Perfil">
+                                <div class="card-body">
+                                    <h5 class="card-title">Penina  Nina</h5>
+                                    <p class="card-text">Dsesigner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/profile1.jpg" class="card-img-top" alt="Imagem de Perfil">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arnaldo da Silva</h5>
+                                    <p class="card-text">Desenvolvedor De Software</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!--Apply area-->
+            <div id="apply-area">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6 apply-box" id="company-img"></div>
+                    <div class="col-md-6 apply-box" id="pattern-img">
+                      <h4>Gosta de desafios?</h4>
+                      <p>Esta página dá informações sobre eleições em Moçambique.
+                        Moçambique elege os seus representantes políticos a três níveis:
+                        • a nível nacional elege o chefe de estado, o Presidente da República,
+                         e o parlamento, 
+                        a Assembleia da República. O presidente é eleito para um mandato de cinco anos por sufrágio direto, desde 1994. </p>
+                      <p>Clique no botão abaixo e confira os benefícios e as posições em aberto.</p>
+                      <p>Aqui vc terá a chance de Votar</p>
+                      <a href="Paginas/SistemaVotos.html" class="btn btn-outline-primary rounded-pill" id="apply-btn">Vamos Votar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--Portfólio-->
+            <div id="portfolio-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="main-title">É Bom lembrar do Passado</h3>
+                        </div>
+                        <div class="col-md-12" id="filter-btn-box">
+                            <button class="main-btn btn btn-outline-primary rounded-pill border-2 filter-btn active" id="all-btn">Todos</button>
+                            <button class="main-btn btn btn-outline-primary rounded-pill border-2 filter-btn" id="dev-btn">Resultados</button>
+                            <button class="main-btn btn btn-outline-primary rounded-pill border-2 filter-btn" id="dsg-btn">Equipes</button>
+                            <button class="main-btn btn btn-outline-primary rounded-pill border-2 filter-btn" id="seo-btn">Cidade</button>
+                        </div>
+                        <div class="col-md-4 project-box dev">
+                            <img src="img/CriancaVoto.jpg" class="img-fluid" alt="Projecto 1">
+                        </div>
+                        <div class="col-md-4 project-box dsg">
+                            <img src="img/Cidade.jpg" class="img-fluid" alt="Projecto 2">
+                        </div>
+                        <div class="col-md-4 project-box dev">
+                            <img src="img/CriancaVoto.jpg" class="img-fluid" alt="Projecto 3">
+                        </div>
+                        <div class="col-md-4 project-box seo">
+                            <img src="img/Maputo_katembe.jpg" class="img-fluid" alt="Projecto 4">
+                        </div>
+                        <div class="col-md-4 project-box dev">
+                            <img src="img/ResulVoto.jpg" class="img-fluid" alt="Projecto 5">
+                        </div>
+                        <div class="col-md-4 project-box dsg">
+                            <img src="img/ProcVoto.jpg" class="img-fluid" alt="Projecto 6">
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <!--NewsLetter-->
+            <div id="news-area">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Fique pr dentro das Novidades</h3>
+                    </div>
+                    <p>Assina lista de e-mails, e receba Novidades</p>
+                    <form action="" type="email">
+                        <input type="email" name="email" id="email-input" class="form-control" placeholder="Seu melhor Email">
+                        <input type="submit" name="submit" value="Increver" id="news-btn">
+                    </form>
+                </div>
+            </div>
+            <!--Call to action-->
+            <div id="call-area">
+                <div class="container">
+                    <div class="row">
+                        <p>Deseja fazer um Voto </p>
+                        <button class="btn btn-outline-primary rounded-pill " id="call-btn">Votar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em Contacto conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fa fa-phone"></i>
+                        <p><span class="contact-title">Ligue para:</span>(+258) 844847046</p>
+                        <p><span class="contact-title">Horário:</span>8:00 - 19:00</p>
+
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fa fa-envelope"></i>
+                        <p><span class="contact-title">Envie um E-mail:</span>email@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <p><span class="contact-title">Venha Trabalhar connosco:</span> Lorem Ipsium</p>
+                    </div>
+
+                    <div class="col-md-6" id="msg-box">
+                        <p>Ou Deixe uma mensagem</p>
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <form action="">
+                            <input type="email" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="assunto">
+                            <textarea name="mensagem" id="" cols="1" rows="" class="form-control" placeholder="Sua Mensagem"></textarea>
+                            <input type="submit" class="btn btn-outline-primary rounded-pill m-2 justify-content-center" value="Enviar">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="#" target="_blanck">Grupo1@2L4LDS1:USTM</a>&copy; 2023</p>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </footer>
+    <!--JavaScripts-->
+     
+<script src="JS/bootstrap.js"></script>
+<script src="Js/popper.min.js"></script>
+<script src="Js/progressbar.min.js"></script>
+<script src="Js/jquery-3-3-1.js"></script>
+<script src="JS/Java.js"></script>
+<script src="Js/scrollreveal.js">
+    
+</script>
+</body>
+</html>
